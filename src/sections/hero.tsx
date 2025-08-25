@@ -58,11 +58,13 @@ export default function Hero() {
       },
     });
 
-    videoRef.current.onloadedmetadata = () => {
-      videoTimelineRef.to(videoRef.current, {
-        currentTime: videoRef.current?.duration,
-      });
-    };
+    if (videoRef.current) {
+      videoRef.current.onloadedmetadata = () => {
+        videoTimelineRef.to(videoRef.current, {
+          currentTime: videoRef.current?.duration,
+        });
+      };
+    }
   }, []);
   return (
     <>
