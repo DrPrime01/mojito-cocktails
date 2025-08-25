@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.tsx";
 import Hero from "./sections/hero.tsx";
 import Cocktails from "./sections/cocktails.tsx";
 import About from "./sections/about.tsx";
+import TheArt from "./sections/the-art.tsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -14,6 +15,7 @@ export default function App() {
       <Hero />
       <Cocktails />
       <About />
+      <TheArt />
     </main>
   );
 }
