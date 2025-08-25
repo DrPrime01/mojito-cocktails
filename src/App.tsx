@@ -6,6 +6,7 @@ import Cocktails from "./sections/cocktails.tsx";
 import About from "./sections/about.tsx";
 import TheArt from "./sections/the-art.tsx";
 import Menu from "./sections/menu.tsx";
+import Contact from "./sections/contact.tsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -18,6 +19,7 @@ export default function App() {
       <About />
       <TheArt />
       <Menu />
+      <Contact />
     </main>
   );
 }
